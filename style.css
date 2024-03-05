@@ -1,0 +1,331 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Quicksand",sans-serif ;
+}
+header{
+    height: 100vh;
+    background: url("./img/home_bg.jpeg") center center/cover no-repeat;
+}
+#navbar img{
+    width:80px ;
+    margin-left: 100px;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    list-style: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+#navbar ul{
+    display: flex;
+    margin-right:100px ;
+}
+#navbar ul li a {
+    color:white;
+    font-weight: 600;
+    padding: 15px 20px;
+    
+}
+#navbar ul li a:hover {
+   border-bottom:3px solid rgb(159, 159, 25) ;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:15%;
+}
+h1{
+    font-size: 40px;
+    color: white;
+}
+p{
+  margin: 20px 0 40px;  
+  color: white;
+}
+.khh{
+      color: chocolate;
+}
+header::before{
+    content:"";
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.6);
+}
+header *{
+    z-index: 10;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary{
+    color: white;
+    border: 1px solid white;
+}
+.btn-primary:hover{
+     background-color: darkgoldenrod;
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre{
+      text-align: center;
+      margin-bottom: 4rem;
+}
+h2{
+    font-size: 40px;
+    color: #383838;
+    margin-bottom: 20px;
+}
+#about.titre p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight:600
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+
+}
+.about-content img{
+    width: 450px;
+}
+.about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6; /*massafa bin setoura*/
+
+}
+.btn-scendery{
+    color: white;
+    background: #383838;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+.btn-scendery:hover{
+background: darkgoldenrod;
+}
+.kho{
+    color:black
+
+}
+#offers{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url("./img/offer-background.jpg") center center/cover fixed;
+}
+#offers.titre{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+ #offers h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: rgb(189, 189, 75);
+}
+#offers.titre p{
+     color: white;
+     font-weight: 500;
+}
+.offers-items {
+    display: flex;
+    justify-content: center;
+    
+    color: white;
+}
+.offers-items img {
+    width: 200px;
+}
+h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+.offers-items p{
+    font-size: 14px;
+    padding: 15px;
+    font-weight: 300;
+    margin-bottom:10px ;
+
+}
+.primery-texte{
+    color: rgb(154, 154, 63);
+    font-size: 18px;
+    font-weight:600  ;
+    margin-left:10px ;
+}
+#menu{
+    background: white;
+    padding: 5rem 0;
+}
+#menu.titre{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#menu.h2{
+     font-size: 40px;
+     margin-bottom: 20px;
+     color: #383838;
+}
+.titre p{
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+.menu-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-items img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.menu-item p{
+    color: #000000;
+    margin-top:10px ;
+}
+.menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.menu-item h3{
+    color: #4b4b63;
+    border-bottom: 1px dashed #c2bdbd;
+    padding-bottom: 10px;
+    position: relative;
+}
+.menu-item span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#menu .btn{
+    display: block;
+    margin:  20px auto 0;
+    background-color: #e4b95b;
+    color: white;
+    cursor:pointer ;
+
+}
+#menu .btn:hover{
+    background: #383843 ;
+}
+#daytime{
+    background: url( "./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+    color: white;
+    text-align: center;
+}
+.daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+.daytime-items h3{
+    font-size: 32px;
+    margin:20px 0 10px;
+}
+.daytime-item  p{
+    font-weight: 500;
+}
+.img-gallery img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+#gallery{
+    background: url("./img/offer-background.jpg");
+    padding: 8rem 0 6rem;
+}
+#gallery h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.img-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img-gallery img:hover{
+    opacity: 1;
+}
+#contact{
+    padding: 5rem 0;
+    background: white;
+}
+#contact.container{
+    max-width: 900px;
+}
+.contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contact-content .contact-info{
+    width: 50%;
+}
+.contact-content .contact-info div{
+    margin: 20px 0;
+    line-height: 1.7;
+}
+.contact-content .contact-info p{
+    color: #9a9a9a;
+}
+.contact-info{
+    color: #000000;
+}
+.contact-content .contact-info i{
+    color: #e4b95b;
+    margin-right: 5px;
+}
+.contact-content .contact-info a i{
+    color: white;
+    background-color: #383843;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+
+}
+.contact-content .contact-info a i:hover{
+    background: #e4b95b;
+    color: #383843;
+}
+
+
+
+
+
+
+
